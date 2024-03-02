@@ -49,6 +49,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: var(--color-white);
 }
 /* END CSS RESET */
 
@@ -99,21 +100,54 @@ body {
 .card {
   display: grid;
   align-items: center;
-  // gap: 20px;
+  // row-gap: 2rem;
   border-radius: var(--default-radius);
   background-color: var(--color-dark-blue);
   padding: var(--default-padding);
 }
 
+.project-info {
+  font-weight: 400;
+}
+
+.project-title {
+  font-size: 2.6rem;
+}
+
+.project-type {
+  font-size: 1.4rem;
+}
+
 .tech-stack {
-  // display: flex;
   justify-content: space-between;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  // gap: 50px;
+}
+
+.tech-stack-title {
+  margin-bottom: 1rem;
+}
+
+.tech-stack-language {
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // display: inline-block;
+  background-color: var(--color-desaturated-blue);
+  // position: absolute;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+p.tech-stack-language {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 0.3rem;
 }
 .personal-info {
   background-color: var(--color-pale-blue);
   padding: var(--default-padding);
 }
-
 .personal-img {
   width: 10rem;
   height: 10rem;
