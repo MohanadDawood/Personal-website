@@ -123,6 +123,37 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 0;
+    padding-bottom: var(--default-padding);
+  }
+  .card {
+    &:first-child {
+      display: flex;
+      border-radius: 0;
+    }
+    &:not(:first-child) {
+      margin: 0 var(--default-padding);
+    }
+    .personal-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .social {
+      flex-direction: row;
+      gap: 0;
+      flex-wrap: wrap;
+    }
+    .social-wrapper {
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+}
+
 //End Responsive
 
 .card {
